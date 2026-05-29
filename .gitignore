@@ -1,2 +1,41 @@
-# Large files 
+# Python
+myenv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Environment / Secrets
+.env
+.env.local
+*.env
+
+# Large Dataset
 backend/dataset/IMDB Dataset.csv
+backend/dataset/*.csv
+
+# Saved Models
+backend/saved_models/*.pth
+backend/saved_models/*.pkl
+
+# Frontend (React + Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

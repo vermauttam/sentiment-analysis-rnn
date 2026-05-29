@@ -20,10 +20,13 @@ __pycache__/
 # Large Dataset
 backend/dataset/IMDB Dataset.csv
 backend/dataset/*.csv
+notebook/IMDB Dataset.csv
+notebook/*.csv
 
 # Saved Models
 backend/saved_models/*.pth
 backend/saved_models/*.pkl
+notebook/saved_models/
 
 # Frontend (React + Vite)
 frontend/node_modules/

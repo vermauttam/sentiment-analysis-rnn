@@ -1,4 +1,15 @@
+import nltk
 import re
+
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
+try:
+    nltk.data.find("tokenizers/punkt_tab")
+except LookupError:
+    nltk.download("punkt_tab")
+
 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords

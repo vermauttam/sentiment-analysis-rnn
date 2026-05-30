@@ -1,44 +1,68 @@
 # Python
-myenv/
-venv/
-env/
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
+#Virtual Environments
+venv/
+env/
+ENV/
+myenv/
+.venv/
+env.bak/
+venv.bak/
 
-# Environment / Secrets
+#Environment Variables
 .env
 .env.local
-*.env
+*.local
 
-# Large Dataset
-backend/dataset/IMDB Dataset.csv
-backend/dataset/*.csv
-notebook/IMDB Dataset.csv
-notebook/*.csv
+#Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
 
-# Saved Models
-backend/saved_models/*.pth
-backend/saved_models/*.pkl
-notebook/saved_models/
+#Datasets (large files)
+*.csv
+IMDB Dataset.csv
 
-# Frontend (React + Vite)
+# Node / Frontend (Vite + React)
+node_modules/
 frontend/node_modules/
-frontend/dist/
-frontend/.vite/
+dist/
+dist-ssr/
+.vite/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# OS / Editor junk
-.DS_Store
-Thumbs.db
+#IDE / Editor
 .vscode/
 .idea/
 *.swp
+*.swo
+
+#OS Junk
+.DS_Store
+Thumbs.db
+desktop.ini

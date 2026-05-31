@@ -296,13 +296,13 @@ uvicorn app:app --reload
 Backend URL:
 
 ```text
-http://localhost:8000
+https://sentiment-analysis-rnn-znj0.onrender.com
 ```
 
 Swagger Documentation:
 
 ```text
-http://localhost:8000/docs
+https://sentiment-analysis-rnn-znj0.onrender.com/docs
 ```
 
 ---
@@ -320,10 +320,11 @@ npm run dev
 Frontend URL:
 
 ```text
-http://localhost:5173
+https://sentiment-analysis-rnn.vercel.app/
 ```
 
 ---
+
 
 ## Running the Application
 
@@ -335,6 +336,18 @@ http://localhost:5173
 6. View the prediction and confidence score.
 
 ---
+## Run Locally
+After starting the backend locally, it will run on:
+
+http://localhost:8000
+
+Swagger documentation:
+
+http://localhost:8000/docs
+
+After starting the frontend locally, it will run on:
+
+http://localhost:5173
 
 ## Example Predictions
 

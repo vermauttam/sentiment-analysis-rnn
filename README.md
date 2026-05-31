@@ -421,6 +421,6 @@ Possible future enhancements include:
 
 **Uttam Verma**
 
-B.Tech C.S.E Student
+B.Tech C.S.E 
 
 This project was developed as part of learning and implementing an end-to-end machine learning application, covering model training, backend development, and frontend integration.

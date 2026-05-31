@@ -1,19 +1,25 @@
-import nltk
 import re
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
 
+
+# Download required NLTK resources if they are missing
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
     nltk.download("punkt")
+
 try:
     nltk.data.find("tokenizers/punkt_tab")
 except LookupError:
     nltk.download("punkt_tab")
 
-
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
+try:
+    nltk.data.find("corpora/stopwords")
+except LookupError:
+    nltk.download("stopwords")
 
 
 # Create stemmer object once
@@ -25,31 +31,24 @@ stop_words = set(stopwords.words("english"))
 
 # Remove HTML tags
 def remove_html(text):
-
     text = re.sub(r"<.*?>", "", text)
-
     return text
 
 
 # Remove URLs
 def remove_urls(text):
-
     text = re.sub(r"http\S+", "", text)
-
     return text
 
 
 # Remove punctuations
 def remove_punctuations(text):
-
     text = re.sub(r"[^A-Za-z0-9\s]", "", text)
-
     return text
 
 
 # Remove stopwords and perform stemming in one pass
 def remove_stopwords_and_stem(text):
-
     tokens = word_tokenize(text)
 
     processed_words = [
@@ -63,7 +62,6 @@ def remove_stopwords_and_stem(text):
 
 # Complete preprocessing pipeline
 def preprocess_text(text):
-
     # lowercase
     text = text.lower()
 

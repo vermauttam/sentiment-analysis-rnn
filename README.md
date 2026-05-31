@@ -6,6 +6,17 @@ The project classifies movie reviews as **Positive** or **Negative** using a Rec
 
 ---
 
+---
+
+## Live Demo
+
+**Live App:** https://sentiment-analysis-rnn.vercel.app
+
+**Backend API:** https://sentiment-analysis-rnn-znj0.onrender.com
+
+> **Note:** The backend is hosted on Render free tier, so the first prediction may take a few seconds due to cold start. Later predictions are faster.
+
+
 ## Project Overview
 
 The main objective of this project was to understand the complete machine learning workflow:
@@ -223,18 +234,21 @@ The result card changes appearance depending on whether the prediction is positi
 
 ## Screenshots
 
+### Home Page
+
+![Home Page](screenshots/home.png)
+
 ### Positive Prediction
 
-```markdown
-![Positive](screenshots/positive.png)
-```
+![Positive Prediction](screenshots/positive.png)
 
 ### Negative Prediction
 
-```markdown
-![Negative](screenshots/negative.png)
-```
+![Negative Prediction](screenshots/negative.png)
 
+### Live Deployed App
+
+![Live App](screenshots/live-app.png)
 ---
 
 ## Setup Instructions
@@ -385,7 +399,7 @@ Possible future enhancements include:
 * Adding model evaluation dashboards.
 * Supporting batch predictions.
 * Containerizing the application using Docker.
-* Deploying the project to a cloud platform.
+* Improving backend cold start time.
 * Experimenting with transformer-based models such as BERT.
 
 ---
@@ -394,6 +408,6 @@ Possible future enhancements include:
 
 **Uttam Verma**
 
-B.Tech Student
+B.Tech C.S.E Student
 
 This project was developed as part of learning and implementing an end-to-end machine learning application, covering model training, backend development, and frontend integration.
